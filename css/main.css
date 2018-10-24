@@ -1,0 +1,104 @@
+body{
+  text-align: center;
+}
+.text{
+  padding:10px;
+  font-size: 20px;
+  line-height: 50px;
+}
+
+.test-image{
+  width: 100%;
+}
+
+.example-gakkari{
+  display: inline;
+}
+
+.gakkari{
+  display: inline-block;
+  height:auto;
+  width:60px;
+}
+
+.example-gakkari-text{
+  display: inline-block;
+  text-align: left;
+  font-size: 15px;
+}
+
+.description-text{
+  margin:20px 20px;
+  font-size: 18px;
+  text-align: left;
+}
+.box{
+  padding: 40px 0px;
+}
+
+.example-image-box{
+  position: relative;
+  margin:0 30px;
+}
+.good{
+  position:relative;
+  width: 100%;
+  opacity: 1;
+  -webkit-transition: all 0.5s ease 0s;
+  -moz-transition: all 0.5s ease 0s;
+  transition: all 0.5s ease 0s;
+}
+
+.bad {
+  position: absolute;
+  top:0;
+  left:0;
+  width: 100%;
+  opacity: 0;
+  -webkit-transition: all 0.5s ease 0s;
+  -moz-transition: all 0.5s ease 0s;
+  transition: all 0.5s ease 0s;
+  z-index: auto;
+}
+
+.show{
+  width:100%;
+  opacity: 1;
+  -webkit-transition: all 0.5s ease 0s;
+  -moz-transition: all 0.5s ease 0s;
+  transition: all 0.5s ease 0s;
+}
+
+
+.invite-button-script {
+  display: inline-block;
+  margin-top: 20px;
+  padding:10px 25px;
+  font-size: 1.2em;
+  color: whitesmoke;
+  text-shadow: 1px 1px 2px #000000;
+  background-color: cornflowerblue;
+  border-radius: 15px 15px 15px 15px;
+  box-shadow: 2px 2px 4px -2px #999595;
+}
+.invite-twipla-script {
+  display: block;
+  font-size: 0.8em;
+  color: #999596;
+  margin-bottom: 70px;
+}
+
+.yzkgym-section {
+  display: inline-block;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+.yzkgym-logo {
+  display: block;
+  width: 180px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  margin-left: auto;
+  margin-right: auto;
+}

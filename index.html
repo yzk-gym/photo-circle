@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="utf-8">
+    <title>柚希ジム撮影練習会</title>
+    <meta name="description" content="みんなで教えあって奇跡の一枚を撮ろう！">
+    <meta name="author" content="yzk-gym">
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no,minimal-ui">
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="柚希ジム撮影練習会" />
+    <meta name="twitter:description" content="みんなで教えあって奇跡の一枚を撮ろう！" />
+    <meta property="og:image" content="https://yzkgym-portrait.netlify.com/img/ogp.jpg" />
+    <link href="https://fonts.googleapis.com/css?family=Anton" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="./css/main.css">
+    <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-2.2.3.min.js"></script>
+    <!--<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">-->
+</head>
+<body>
+  <session class="top-session">
+    <img src="img/himari.jpeg" class="test-image">
+  </session>
+  <session class="example-session">
+    <div>
+      <p class="text">
+        いい写真の撮り方がわからない！<br>
+        難しそうだから一人だと不安...<br>
+        <br>
+        そんなあなた！みんなで写真をうまく撮れるようになりませんか？
+        </p>
+      <div class="example-bure box">
+        <div class="example-image-box">
+          <img src="img/bure_good.jpg" class="good">
+          <img src="img/bure_bad.jpg" class="example-image bad">
+        </div>
+        <p class="text">手ブレしてしまったり</p>
+      </div>
+      <div class="example-makkura box">
+        <div class="example-image-box">
+          <img src="img/makkura_good.jpg" class="good">
+          <img src="img/makkura_bad.jpg" class="example-image bad">
+        </div>
+        <p class="text">暗くなってしまったり</p>
+      </div>
+      <dev class="example-pinboke box">
+        <div class="example-image-box">
+          <img src="img/pinboke_good.jpg" class="good">
+          <img src="img/pinboke_bad.jpg" class="example-image bad">
+        </div>
+        <p class="text">ピンボケしてしまったり...</p>
+      </dev>
+      <div class="example-gakkari">
+        <img src="img/gakkari.jpg" class="gakkari">
+        <p class="example-gakkari-text">
+          うまく撮れないとモチベも<br>
+          上がりづらいし、どうすれば<br>
+          綺麗な写真が撮れるかわからない。。
+        </p>
+      </div>
+      <p class="text">
+        初心者がつまづきそうなところから<br>
+        みんなで一緒に学んで 自分だけの<br>
+        「奇跡の一枚」を撮ろう！<br>
+      </p>
+      <p class="text">
+        以下のボタンからついぷらに飛んで<br>
+        参加表明をしよう！<br>
+      </p>
+    </div>
+  </session>
+  <section class="invite-section">
+    <div class="invite-button">
+    <a href="https://twipla.jp/events/344338" class="invite-button" target="_blank"><span class="invite-button-script">参加する</span></a>
+    </div>
+    <span class="invite-twipla-script">※TwiPlaに飛びます</span>
+  </section>
+  <section class="yzkgym-section">
+    <img src="./img/yzkgymlogo_web@2x.png" class="yzkgym-logo">
+  </section>
+</body>
+</html>
+<script>
+    $(function(){
+        $('.example-image').each(function(i, elem){
+            var contentsPOS = $(elem).offset().top;
+            $(window).on('load scroll resize', function(){
+                var winHeight = $(window).height();
+                var scrollTop = $(window).scrollTop();
+                var showClass = 'show';
+                var timing = 400; // 100pxコンテンツが見えたら次のif文がtrue
+                if (scrollTop >= contentsPOS - winHeight + timing) {
+                    $(elem).addClass(showClass);
+                } else {
+                    $(elem).removeClass(showClass);
+                }
+            });
+        });
+    });
+</script>
