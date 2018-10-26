@@ -2,9 +2,10 @@ body{
   text-align: center;
 }
 .text{
-  padding:10px;
-  font-size: 20px;
-  line-height: 50px;
+  padding:15px;
+  font-size: 18px;
+  line-height: 40px;
+  font-family: YuGothic;
 }
 
 .test-image{
@@ -25,6 +26,7 @@ body{
   display: inline-block;
   text-align: left;
   font-size: 15px;
+  font-family: YuGothic;
 }
 
 .description-text{
@@ -42,7 +44,7 @@ body{
 }
 .good{
   position:relative;
-  width: 100%;
+  width: 90%;
   opacity: 1;
   -webkit-transition: all 0.5s ease 0s;
   -moz-transition: all 0.5s ease 0s;
