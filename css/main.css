@@ -1,41 +1,60 @@
+@font-face {
+  font-family: 'futura';
+  src: url('../fonts/Futura-LigObl.otf')
+}
+@font-face {
+  font-family: 'pop';
+  src: url('../fonts/851MkPOP_001.ttf')
+}
+
 body{
+  margin:0;
   text-align: center;
 }
+
+a {
+  text-decoration: none;
+}
+
+.top-image{
+  width: 100%;
+}
+
 .text{
-  padding:15px;
-  font-size: 18px;
+  font-size: 15px;
   line-height: 40px;
   font-family: "游ゴシック体", YuGothic, "游ゴシック", "Yu Gothic", "メイリオ", sans-serif;
 }
 
-.test-image{
-  width: 100%;
+.pop-text{
+  font-family: pop;
+  font-size: 25px;
+  color: cornflowerblue;
 }
 
-.example-gakkari{
-  display: inline;
+.red{
+  color: #eb0000;
 }
 
-.gakkari{
-  display: inline-block;
-  height:auto;
-  width:60px;
+.blank{
+  padding:10px;
 }
 
-.example-gakkari-text{
-  display: inline-block;
+.example-case{
   text-align: left;
+  font-family: futura;
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.example-case-text{
+  text-align: left;
+  margin-left: 20px;
   font-size: 15px;
-  font-family: "游ゴシック体", YuGothic, "游ゴシック", "Yu Gothic", "メイリオ", sans-serif;
 }
 
-.description-text{
-  margin:20px 20px;
-  font-size: 18px;
-  text-align: left;
-}
-.box{
-  padding: 40px 0px;
+.example-box{
+  padding: 10px 0px 20px;
 }
 
 .example-image-box{
@@ -49,6 +68,26 @@ body{
   -webkit-transition: all 0.5s ease 0s;
   -moz-transition: all 0.5s ease 0s;
   transition: all 0.5s ease 0s;
+}
+
+.button{
+  display: inline-block;
+  margin-bottom:2em;
+  padding: 0.3em 1em;
+  text-decoration: none;
+  color: black;
+  border: solid 2px black;
+  border-radius: 3px;
+  transition: .4s;
+}
+
+.button-text{
+  margin:0.3em;
+}
+
+.border{
+  width:75%;
+  border-bottom: black;
 }
 
 .bad {
@@ -71,36 +110,48 @@ body{
   transition: all 0.5s ease 0s;
 }
 
-
-.invite-button-script {
-  display: inline-block;
-  margin-top: 20px;
-  padding:10px 25px;
-  font-size: 1.2em;
-  color: whitesmoke;
-  text-shadow: 1px 1px 2px #000000;
-  background-color: cornflowerblue;
-  border-radius: 15px 15px 15px 15px;
-  box-shadow: 2px 2px 4px -2px #999595;
-}
-.invite-twipla-script {
-  display: block;
-  font-size: 0.8em;
-  color: #999596;
-  margin-bottom: 70px;
-}
-
-.yzkgym-section {
-  display: inline-block;
-  width: 100%;
-  margin-left: auto;
-  margin-right: auto;
-}
 .yzkgym-logo {
-  display: block;
+  display: inline-block;
   width: 180px;
-  margin-top: 20px;
-  margin-bottom: 20px;
-  margin-left: auto;
-  margin-right: auto;
+}
+
+footer{
+  text-align: center;
+  background-color:#FFE4E1;
+}
+
+.footer-session{
+  padding-top:20px;
+}
+
+.invite-button{
+  color:black;
+  position: relative;
+  display: inline-block;
+  padding: 0 0 0 16px;
+  color: #000;
+  vertical-align: middle;
+  text-decoration: none;
+  font-size: 15px;
+}
+
+.invite-button::before,
+.invite-button::after{
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  margin: auto;
+  content: "";
+  vertical-align: middle;
+}
+
+.sankaku::before{
+  right: 0;
+  width: 4px;
+  height: 4px;
+  border-top: 2px solid black;
+  border-right: 2px solid black;
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
 }
