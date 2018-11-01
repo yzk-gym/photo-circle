@@ -32,6 +32,25 @@ a {
   color: cornflowerblue;
 }
 
+.pop-box{
+  position: relative;
+  height:50px;
+}
+
+.komatta{
+  position: absolute;
+  right:1.8em;
+  bottom:0.8em;
+  width: 40px;
+}
+
+.yatta{
+  position: absolute;
+  bottom:0.4em;
+  left:4em;
+  width: 40px;
+}
+
 .red{
   color: #eb0000;
 }
